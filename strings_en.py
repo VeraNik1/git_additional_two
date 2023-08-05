@@ -28,3 +28,8 @@ greetings = ['Hello, ', 'Hi, ', 'Welcome, ', 'Glad to see you, ', 'Happy to see 
 
 #symbols for new year
 SYMBOL_NY = '🎉'
+
+'''
+barbie barbie giiiirl
+in a barbieee world...
+'''
