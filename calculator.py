@@ -1,8 +1,11 @@
 import operator
+#задаю операторы
 OPERATORS = {'+': (1, operator.add), '-': (1, operator.sub),
              '*': (2, operator.mul), '/': (2, operator.truediv)}
 
+# функция вычисления математического выражения из строки
 def eval_(formula):
+    #функция парсинга строки
     def parse(formula_string):
         number = ''
         for s in formula_string:
@@ -16,6 +19,7 @@ def eval_(formula):
         if number:
             yield float(number)
 
+# функциядля формирования стека
     def shunting_yard(parsed_formula):
         stack = []
         for token in parsed_formula:
@@ -36,6 +40,7 @@ def eval_(formula):
         while stack:
             yield stack.pop()
 
+# функция вычисления из собранного стека
     def calc(polish):
         stack = []
         for token in polish:
