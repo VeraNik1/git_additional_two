@@ -35,3 +35,4 @@ Send **/calc** + math expression like (2 +3) / 5 to get the result. For example 
 Send **/new_year** to start to see how long it is from now until the New Year
 
 ![](new.jpg)
+# git_additional
